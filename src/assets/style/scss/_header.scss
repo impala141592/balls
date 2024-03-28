@@ -1,0 +1,24 @@
+.header {
+  background-color: gainsboro;
+  height: 50px;
+  // width: 100%;
+  // width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 18px;
+
+  .logo {
+    height: 28px;
+    filter: invert(1);
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    // gap: 20px;
+  }
+}

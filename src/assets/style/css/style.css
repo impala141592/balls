@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: inherit;
+}
+
+.header {
+  background-color: gainsboro;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 18px;
+}
+.header .logo {
+  height: 28px;
+  filter: invert(1);
+}
+.header .main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hero {
+  position: relative;
+  border-radius: 18px;
+  width: 100%;
+  height: 500px;
+  background-color: gainsboro;
+  overflow: hidden;
+}
+.hero .caption-container {
+  position: absolute;
+  bottom: 0;
+  background: white;
+  border-radius: 0 42px 0 18px;
+  height: 150px;
+  width: 32%;
+}
+.hero .caption-container:before {
+  content: "";
+  position: absolute;
+  height: 42px;
+  top: -42px;
+  left: 0;
+  width: 100px;
+  border-bottom-left-radius: 42px;
+  box-shadow: -42px 0 0 0 white;
+}
+.hero .caption-container:after {
+  content: "";
+  position: absolute;
+  height: 42px;
+  bottom: 0;
+  right: -100px;
+  width: 100px;
+  border-bottom-left-radius: 42px;
+  box-shadow: -42px 0 0 0 white;
+}
+.hero .caption-container .caption {
+  padding: 24px;
+  font-size: 32px;
+  font-weight: bold;
+  color: gainsboro;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.product-card {
+  position: relative;
+  width: calc(25% - 18px);
+  height: 380px;
+  padding: 8px;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  background-color: gainsboro;
+}
+.product-card:last-child {
+  margin-right: 0;
+}
+.product-card img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+}
+.product-card .product-card-info {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  border-radius: 12px;
+  margin-top: auto;
+}
+
+.App {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  padding: 32px;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+    padding: 24px;
+    gap: 24px;
+  }
+}
+
+.route {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}/*# sourceMappingURL=style.css.map */
